@@ -3,7 +3,7 @@
 ini_set('display_errors', 'off');
 require_once 'mysqlconfig.php';
 $conn = new PDO("mysql:host=$host;dbname=$db","$username","$password");
-$conn->exec("SET CHARACTER SET utf8");
+$conn->exec("SET CHARACTER SET utf8mb4");
 
 if(isset($_GET['title'])){
 $lib=$_GET['title'];
